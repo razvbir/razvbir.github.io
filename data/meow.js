@@ -1,0 +1,28 @@
+export default
+{
+  "skills": [
+    "Meowing in the hallway",
+    "Waking up the neighbours",
+    "Hunting chicken out of plates",
+    "Asking to go out when I don't want out",
+    "Singing like a broken violin whenever I feel like it"
+  ],
+  "languages": [
+    {
+      "language": "Romeownian",
+      "level": "native"
+    },
+    {
+      "language": "Meowglish",
+      "level": "advanced"
+    },
+    {
+      "language": "Meowdarin",
+      "level": "intermeowdiate"
+    },
+    {
+      "language": "Italian",
+      "level": "beginner"
+    }
+  ]
+}

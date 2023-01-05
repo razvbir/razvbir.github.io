@@ -1,0 +1,196 @@
+@import url('pencerio.css');
+@import url('dancing-script.css');
+
+* {
+	font-family: 'DancingScript-Regular', sans-serif;
+	font-size: 24px;
+	box-sizing: border-box;
+}
+
+:root {
+	--meow-black: #000;
+	--meow-green: #1f3f42;
+	--meow-turquoise: #468588;
+	--meow-gray-green: #798985;
+	--meow-gray: #d0d0c4;
+	--meow-gold: #b88743;
+}
+
+#header-wrapper {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	place-items: center;
+	background-image: linear-gradient(to bottom, var(--meow-turquoise), var(--meow-green) 90%);
+	color: white;
+}
+
+.meow-avatar {
+	/* border-radius: 50%; */
+	border: 4px solid gray;
+}
+
+
+header .cv-name {
+	font-family: 'Pencerio-Hairline', sans-serif;
+	font-size: 48px;
+}
+
+main {
+	background-color: var(--meow-gray-green);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 60px 15px 60px;
+}
+
+footer {
+	background-color: var(--meow-black);
+	color: var(--meow-gray);
+	padding: 50px 30px 50px;
+}
+
+footer a:hover,
+footer a:visited:hover {
+	color: var(--meow-gold);
+}
+
+footer a:visited {
+	color: var(--meow-turquoise);
+}
+
+footer a {
+	color: var(--meow-gray-green);
+}
+
+.coin-donations form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+	/*overflow-x: hidden;*/
+}
+
+.favorite {
+	font-weight: bold;
+	color: darkgreen;
+}
+
+.page-container {
+	flex-grow: 2;
+}
+
+.page {
+	border: 5px dashed var(--meow-turquoise);
+	background: var(--meow-gray);
+	padding: 0 15px 25px 25px;
+	margin: 10px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.18);
+}
+
+#top-menu-bar {
+	text-align: center;
+	background-color: var(--meow-green);
+	color: white;
+}
+
+#top-menu-bar li {
+	display: inline-block;
+	margin: 0;
+	padding: 10px 5px;
+}
+
+#top-menu-bar a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+#top-menu-bar a:visited {
+	color: white;
+}
+
+#top-menu-bar a:hover {
+	background: white;
+	color: #334455;
+}
+
+.attribution {
+	display: flex;
+	flex-direction: column;
+}
+
+.paw-icon {
+	height: 83px;
+}
+
+.meow-avatar {
+	height: 200px;
+}
+
+.meow-coin {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.paw-icon {
+	transform: rotate(30deg);
+	opacity: 0.7;
+}
+
+#black-cat {
+	display: grid;
+	justify-items: center;
+	margin-bottom: -35px;
+}
+
+.black-cat {
+	position: relative;
+}
+
+.black-cat img {
+	display: block;
+	width: 250px;
+}
+
+.black-cat .eyes {
+	width: 12px;
+	position: absolute;
+}
+
+#left-eye {
+	top: 72px;
+	left: 95px;
+}
+
+#right-eye {
+	top: 72px;
+	right: 92px;
+}
+
+.coin-donations {
+	border: 2px solid black;
+	padding: 0 30px 30px;
+	border-radius: 5px;
+	background-color: var(--meow-gray);
+}
+
+aside {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+}
+
+#top-menu-bar {
+	margin: 0;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+	<script src="js/index.js" type="module" defer></script>
+	<script src="js/handleForm.js" type="text/javascript" defer></script>
+	<script src="js/moveEyes.js" type="text/javascript" defer></script>
+	<script src="js/functions.js" type="text/javascript" defer></script>
+	<title>Meow CV</title>
+</head>
+<body>
+	<audio id="meow-sound" src="sounds/MeowOne.mp3"></audio>
+	<header>
+		<div id="header-wrapper">
+			<img class="meow-avatar" src="images/MeowAvatarVariant.jpg" alt="Avatar"/>
+			<div class="cv-profile">
+				<div class="cv-name">Hera Noir Blanc</div>
+				<div class="cv-bio">Sleeping coach @ Scratching SRL</div>
+			</div>
+			<img class="paw-icon" src="images/PawIcon.png" alt="Paw"/>
+		</div>
+		<nav>
+			<ul id="top-menu-bar">
+				<li onclick="playMeowSound()"><a href="#">Home</a></li>
+				<li onclick="playMeowSound()"><a href="#">Skills</a></li>
+				<li onclick="playMeowSound()"><a href="#lang">Known languages</a></li>
+				<li onclick="playMeowSound()"><a href="#">Catch the mouse</a></li>
+				<li onclick="playMeowSound()"><a href="#">About meow friend</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="page-container">
+			<div class="page">
+				<h2>Home</h2>
+				<div class="cv-welcome">
+					Welcome to meow CV. Meow name is Hera.
+				</div>
+
+				<div class="cv-objective">
+					<h1>Objective</h1>
+					<p>I want to get a better paying job, so I can afford more wet food.
+						The kibble is not doing it for me anymore.
+					</p>
+				</div>
+			</div>
+			<div class="page">
+				<h2>Skills</h2>
+				<ul id="skills-list"></ul>
+			</div>
+			<div id="lang" class="page">
+				<h2>Known language</h2>
+				<table id="languages-list">
+					<tr>
+						<th>Language</th>
+						<th>Level</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<aside>
+			<div id="black-cat">
+				<div id="anchor" class="black-cat">
+					<img src="images/BlackCatNoEyes.png" alt="Black cat follows you"/>
+					<img id="left-eye" class="eyes" src="images/BlackCatEyeLeft.png" alt="Left eye"/>
+					<img id="right-eye" class="eyes" src="images/BlackCatEyeRight.png" alt="Right eye"/>
+				</div>
+			</div>
+			<div class="coin-donations">
+				<p>Help me by donating MeowCoin to my wet food jar!</p>
+				<img class="meow-coin" src="images/MeowCoin.png" alt="MeowCoin"/>
+				<form id="form-donations" action="" method="get">
+					<label for="viewerName">Enter your name:</label>
+					<input type="text" name="name" id="viewerName" placeholder="Meow Maiunescu" required>
+					<label for="viewerEmail">Enter your email:</label>
+					<input type="email" name="email" id="viewerEmail" placeholder="catkibble@meowmail.com">
+					<label for="viewerDonation">Enter your donation in MeowCoin here:</label>
+					<input type="number" name="donation" id="viewerDonation" placeholder="50" min="0">
+					<div></div>
+					<button type="submit">Donate</button>
+				</form>
+			</div>
+		</aside>
+	</main>
+
+	<footer>
+		<div class="attribution">
+			<div class="item">
+				Coin (alias MeowCoin) PNG Designed By
+				<a href="https://pngtree.com/freepng/cat-coin_6007348.html?sol=downref&id=bef">
+					 Fongbe
+				</a>
+			</div>
+			<div class="item">
+				Cat Clipart PNG Designed By
+				<a href='https://pngtree.com/freepng/black-cat-with-big-eyes_5418226.html?sol=downref&id=bef'>
+					588ku/
+				</a>
+			</div>
+			<div class="item">
+				Paw Icon from <a href="https://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0
+			</div>
+			<div class="item">
+				Cat icon (alias PurpleCat, used as favicon) created by
+				<a href="https://www.flaticon.com/free-icons/cat" title="cat icons">
+					Freepik - Flaticon
+				</a>
+			</div>
+			<div class="item">
+				Color palette from <a href="https://stitchpalettes.com/palette/calico-cat-spa0986/">Stich Palettes</a>
+			</div>
+			<div class="item">
+				Cat whiskers created by
+				<a href="https://www.flaticon.com/free-icons/cat-whiskers_24674" title="nose icons">Freepik - Flaticon</a>
+			</div>
+			<div class="item">
+				Dancing Script font from <a href="https://www.fontshare.com/fonts/dancing-script">Fontshare</a>
+			</div>
+			<div class="item">
+				Pencerio font from <a href="https://www.fontshare.com/fonts/pencerio">Fontshare</a>
+			</div>
+			<div class="item">
+				Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=89108">Pixabay</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
