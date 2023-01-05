@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-	<script src="js/index.js" type="module" defer></script>
+	<script src="js/controllers.js" type="text/javascript" defer></script>
+	<script src="js/router.js" type="text/javascript" defer></script>
+	<script src="js/functions.js" type="text/javascript" defer></script>
+	<script src="js/index.js" type="text/javascript" defer></script>
 	<script src="js/handleForm.js" type="text/javascript" defer></script>
 	<script src="js/moveEyes.js" type="text/javascript" defer></script>
-	<script src="js/functions.js" type="text/javascript" defer></script>
 	<title>Meow CV</title>
 </head>
 <body>
@@ -24,18 +26,18 @@
 		</div>
 		<nav>
 			<ul id="top-menu-bar">
-				<li onclick="playMeowSound()"><a href="#">Home</a></li>
-				<li onclick="playMeowSound()"><a href="#">Skills</a></li>
-				<li onclick="playMeowSound()"><a href="#lang">Known languages</a></li>
-				<li onclick="playMeowSound()"><a href="#">Catch the mouse</a></li>
-				<li onclick="playMeowSound()"><a href="#">About meow friend</a></li>
+				<li onclick="router('home')"><a href="#home">Home</a></li>
+				<li onclick="router('skills')"><a href="#skills">Skills</a></li>
+				<li onclick="router('languages')"><a href="#languages">Known languages</a></li>
+				<li onclick="router('')"><a href="#">Catch the mouse</a></li>
+				<li onclick="router('')"><a href="#">About meow friend</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
 		<div class="page-container">
-			<div class="page">
+			<div id="home" class="page">
 				<h2>Home</h2>
 				<div class="cv-welcome">
 					Welcome to meow CV. Meow name is Hera.
@@ -48,11 +50,11 @@
 					</p>
 				</div>
 			</div>
-			<div class="page">
+			<div id="skills" class="page">
 				<h2>Skills</h2>
 				<ul id="skills-list"></ul>
 			</div>
-			<div id="lang" class="page">
+			<div id="languages" class="page">
 				<h2>Known language</h2>
 				<table id="languages-list">
 					<tr>
@@ -72,8 +74,10 @@
 				</div>
 			</div>
 			<div class="coin-donations">
-				<p>Help me by donating MeowCoin to my wet food jar!</p>
-				<img class="meow-coin" src="images/MeowCoin.png" alt="MeowCoin"/>
+				<div class="heading">
+					<p>Help me by donating MeowCoin to my wet food jar!</p>
+					<img class="meow-coin" src="images/MeowCoin.png" alt="MeowCoin"/>
+				</div>
 				<form id="form-donations" action="" method="get">
 					<label for="viewerName">Enter your name:</label>
 					<input type="text" name="name" id="viewerName" placeholder="Meow Maiunescu" required>

@@ -7,7 +7,7 @@ const eyes = document.getElementsByClassName("eyes");
 let rectDocument = document.documentElement.getBoundingClientRect();
 let maxChangeX = Math.abs(rectDocument.width - anchorX);
 let maxChangeY = Math.abs(rectDocument.height - anchorY);
-let wUnit = maxChangeX / 12;
+let wUnit = maxChangeX / 6;
 let hUnit = maxChangeY / 2;
 
 window.addEventListener("mousemove", e => {
@@ -25,10 +25,10 @@ window.addEventListener("mousemove", e => {
     }
 });
 
-window.addEventListener("resize", e => {
+window.addEventListener("resize", () => {
     rectDocument = document.documentElement.getBoundingClientRect();
     maxChangeX = Math.abs(rectDocument.width - anchorX);
     maxChangeY = Math.abs(rectDocument.height - anchorY);
-    wUnit = maxChangeX / 10;
+    wUnit = maxChangeX / 7;
     hUnit = maxChangeY / 2;
 });
